@@ -1,12 +1,12 @@
 PATH
   remote: .
   specs:
-    noodall-components-general-content (0.0.1)
+    noodall-components-general-content (0.0.2)
 
 PATH
   remote: /Users/steve/Gems/noodall-ui
   specs:
-    noodall-ui (0.0.2)
+    noodall-ui (0.0.5)
       dynamic_form
       noodall-core
       thoughtbot-sortable_table (= 0.0.6)
@@ -99,6 +99,8 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.16)
+    mm-multi-parameter-attributes (0.1.1)
+      mongo_mapper
     mongo (1.1.1)
       bson (>= 1.1.1)
     mongo_mapper (0.8.6)
@@ -106,10 +108,11 @@ GEM
       jnunemaker-validatable (~> 1.8.4)
       plucky (~> 0.3.6)
     nokogiri (1.4.3.1)
-    noodall-core (0.1.2)
+    noodall-core (0.3.2)
       canable (= 0.1.1)
+      mm-multi-parameter-attributes (~> 0.1.1)
       mongo_mapper (~> 0.8.6)
-      ramdiv-mongo_mapper_acts_as_tree (= 0.1.1)
+      ramdiv-mongo_mapper_acts_as_tree (~> 0.1.1)
       ruby-stemmer
     plucky (0.3.6)
       mongo (~> 1.1)
@@ -133,7 +136,7 @@ GEM
       rake (>= 0.8.4)
       thor (~> 0.14.0)
     rake (0.8.7)
-    ramdiv-mongo_mapper_acts_as_tree (0.1.1)
+    ramdiv-mongo_mapper_acts_as_tree (0.1.2)
       mongo_mapper (>= 0.6.8)
     rmagick (2.13.1)
     rspec (2.0.1)
@@ -161,7 +164,7 @@ GEM
       json_pure
       rubyzip
     term-ansicolor (1.0.5)
-    thor (0.14.3)
+    thor (0.14.4)
     thoughtbot-sortable_table (0.0.6)
     treetop (1.4.8)
       polyglot (>= 0.3.1)
