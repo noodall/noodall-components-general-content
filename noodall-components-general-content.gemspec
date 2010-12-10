@@ -14,6 +14,8 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = ">= 1.3.6"
 #  s.rubyforge_project         = "noodall-component-gallery"
 
+  s.add_dependency "noodall-ui", ">= 0.0.15"
+
   s.add_development_dependency "bundler", ">= 1.0.0"
 
   s.files        = `git ls-files`.split("\n")
