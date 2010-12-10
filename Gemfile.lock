@@ -3,15 +3,6 @@ PATH
   specs:
     noodall-components-general-content (0.0.2)
 
-PATH
-  remote: /Users/steve/Gems/noodall-ui
-  specs:
-    noodall-ui (0.0.5)
-      dynamic_form
-      noodall-core
-      thoughtbot-sortable_table (= 0.0.6)
-      will_paginate (~> 3.0.pre2)
-
 GEM
   remote: http://rubygems.org/
   specs:
@@ -44,7 +35,7 @@ GEM
     activesupport (3.0.1)
     arel (1.0.1)
       activesupport (~> 3.0.0)
-    bson (1.1.1)
+    bson (1.1.4)
     builder (2.1.2)
     canable (0.1.1)
     capybara (0.4.0)
@@ -101,19 +92,24 @@ GEM
     mime-types (1.16)
     mm-multi-parameter-attributes (0.1.1)
       mongo_mapper
-    mongo (1.1.1)
+    mongo (1.1.4)
       bson (>= 1.1.1)
     mongo_mapper (0.8.6)
       activesupport (>= 2.3.4)
       jnunemaker-validatable (~> 1.8.4)
       plucky (~> 0.3.6)
     nokogiri (1.4.3.1)
-    noodall-core (0.3.2)
+    noodall-core (0.3.5)
       canable (= 0.1.1)
       mm-multi-parameter-attributes (~> 0.1.1)
       mongo_mapper (~> 0.8.6)
       ramdiv-mongo_mapper_acts_as_tree (~> 0.1.1)
       ruby-stemmer
+    noodall-ui (0.0.14)
+      dynamic_form
+      noodall-core
+      thoughtbot-sortable_table (= 0.0.6)
+      will_paginate (~> 3.0.pre2)
     plucky (0.3.6)
       mongo (~> 1.1)
     polyglot (0.3.1)
@@ -186,7 +182,7 @@ DEPENDENCIES
   faker (~> 0.3.1)
   launchy
   noodall-components-general-content!
-  noodall-ui!
+  noodall-ui
   rails (= 3.0.1)
   rmagick
   rspec-rails (>= 2.0.0.beta)

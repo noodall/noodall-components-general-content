@@ -19,7 +19,7 @@ When /^(?:|I )fill in the following within the component:$/ do |fields|
   end
 end
 
-When /^(?:|I )press "([^"]*)" within the component$/ do |button|
+When /^(?:|I )press "([^\"]*)" within the component$/ do |button|
   within "#fancybox-inner" do
     click_button(button)
   end
@@ -29,6 +29,8 @@ When /^(?:|I )select an image from the asset library$/ do
   asset = Factory(:asset, :title => "My Image")
   within "#fancybox-inner" do
     page.find(:css, 'span.select-file').click
+    # wait until there is an image to click on so that faster machines don't throw errors
+    wait_until { page.has_css?("#browser-list li:first", :visible => true) }
     click_link "Add"
   end
 end
